@@ -1,0 +1,369 @@
+			JSON
+
+1. Создание внешнего репозитория JSON
+
+ зайти на Github, нажать +, выбрать New repository, 
+написать название репозитория JSON
+
+2. Клонировать репозиторий JSON на локальный компьютер
+$ git clone https://github.com/ishklianik/JSON.git
+
+3.Внутри локального  репозитория JSON создать файл new.json:
+
+заходим на репозиторий на внутреннем диске:
+  $ cd Json
+
+создаем файл new.json:
+$ touch new.json
+  
+проверяем создание:
+$ ls -la
+
+7. Добавить файл под git
+$ git add new.json
+
+8. Закоммитить файл
+  $ git commit -m "New file
+
+9. Отправить файл на внешний GitHub репозиторий
+$ git push 
+
+10. Отредактировать содержимое файла new.json -написать информацию о себе
+ (ФИО,возраст, количество домашних животных, желаемая будущая зарплата)
+
+$ cat >> new.json
+[{"name":"Iryna Shklianik"}
+{"age":43}
+{"number of pets":1}
+{"expected salary":"6000 USD"}]
+
+11.	Отправить изменения на внешний репозиторий
+
+поверка статуса:
+$ git status
+
+добавление файлов
+$ git add new.json
+
+коммит
+$ git commit -m "update"
+
+отправка информации на внешний репозиторий
+$ git push
+
+12. Создать  файл preferences.json
+$ touch preferences.json
+
+13.  В файл preferences.json добавить информацию о своих предпочтениях(Любимый фильм, 
+любимый сериал. любимая еда. время года. страна которую хотели бы посетить
+
+внесение информации в пустой файл
+
+$ cat >> preferences.json
+[{"favorite film":"Love actually"}
+ {"favorite series":"Bron"}
+{"favotite food":"asian cuisine"}
+{"favorite season":"summer"}
+{"country to visit":"Singapore"}]
+
+14. Создать файл skills.json , добавить информацию о скиллах которые будут изучены на курск :
+создание файла:
+$ touch  skills.json
+
+внесение информации в пустой файл:
+$ cat >> skills.json
+[{"skill1":"git"}
+{"skill2":"Postman"}
+{"skill3":"Charles"}
+{"skill4":"JS"}
+{"skill5":"SOAP UI"}
+{"skill6":"Katalon"}]
+
+15. Отправить сразу 2 файла н авнешний репозиторий
+  проверка статуса:
+$ git status
+
+  добавление нескольких (всех) файлов:
+$ git add .
+
+коммит:
+$ git commit -m "Add two files"
+
+отправка информации на внешний репозиторий:
+  $ git push
+
+ проверка статуса:
+$ git status
+
+16. На веб интерфейсе создать файл bug_report.json
+Нажать  ADD file
+
+17.  Сделать Commit changes (сохранить)  изменения на веб интерфейсе
+Нажать Commit changes
+
+18.На веб интерфейсе модифицировать файл bug_report.json, добавить баг-репорт в формате Json
+Открыть файл нажав на него
+Внести информацию
+
+19. Сделать Commit changes (сохранить)  изменения на веб интерфейсе
+Нажать Commit changes  внизу файла
+
+20. Синхронизировать внешний и локальный репозиторий JSON
+ проверка статуса:
+$ git status
+
+$ git fetch
+
+проверка статуса:
+$ git status
+
+отправка информации на локальный репозиторий:
+$ git pull
+
+ проверка статуса:
+$ git status
+
+			XML
+21. Создание внешнего репозитория XML
+ зайти на Github, нажать +, выбрать New repository, 
+написать название репозитория XML
+
+22. Клонировать репозиторий XML на локальный компьютер
+
+$ git clone https://github.com/ishklianik/XML.git
+
+23.Внутри локального  репозитория XML создать файл new.xml:
+
+заходим на репозиторий на внутреннем диске:
+$ cd XML
+
+создаем файл new.xml:
+ $ touch new.xml
+  
+проверяем создание:
+ $ ls -la
+
+24. Добавить файл под git
+$ git add new.xml
+
+25. Закоммитить файл
+$ git commit -m "New file
+
+26. Отправить файл на внешний GitHub репозиторий
+$ git push 
+
+27. Отредактировать содержимое файла new.xml -написать информацию о себе
+ (ФИО,возраст, количество домашних животных, желаемая будущая зарплата)
+
+$ cat >> new.xml
+[{"name":"Iryna Shklianik"}
+{"age":43}
+{"number of pets":1}
+{"expected salary":"6000 USD"}]
+
+28.	Отправить изменения на внешний репозиторий:
+
+проверка статуса:
+$ git status
+
+добавление файла:
+$ git add new.xml
+
+коммит:
+$ git commit -m "update"
+
+отправка на внешний репозиторий:
+  $ git push
+
+29. Создать  файл preferences.xml
+$ touch preferences.xml
+
+30.  В файл preferences.xml добавить информацию о своих предпочтениях(Любимый фильм, 
+любимый сериал. любимая еда. время года. страна которую хотели бы посетить
+
+$ cat >> preferences.xml
+[{"favorite film":"Love actually"}
+ {"favorite series":"Bron"}
+{"favotite food":"asian cuisine"}
+{"favorite season":"summer"}
+{"country to visit":"Singapore"}]
+
+31. Создать файл skills.xml , добавить информацию о скиллах которые будут изучены на курск :
+  создание файла:
+$ touch  skills.xml
+
+внесение информации в пустой файл:
+ $ cat >> skills.xml
+[{"skill1":"git"}
+{"skill2":"Postman"}
+{"skill3":"Charles"}
+{"skill4":"JS"}
+{"skill5":"SOAP UI"}
+{"skill6":"Katalon"}]
+ 
+ 32. Сделать commit в одну строку
+ проверка статуса:
+$ git status
+
+добавление нескольких (всех) файлов
+$ git add .
+
+коммит:
+$ git commit -m "Add two files"
+
+33. Отправить сразу 2 файла на внешний репозиторий
+  $ git push
+
+ проверка статуса:
+  $ git status
+
+34. На веб интерфейсе создать файл bug_report.xml
+Нажать  ADD file
+
+35.  Сделать Commit changes (сохранить)  изменения на веб интерфейсе
+Нажать Commit changes
+
+36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг-репорт в формате xml
+Открыть файл нажав на него
+Внести информацию
+
+37. Сделать Commit changes (сохранить)  изменения на веб интерфейсе
+Нажать Commit changes  внизу файла
+
+38. Синхронизировать внешний и локальный репозиторий xml
+проверка статуса:
+$ git status
+
+$ git fetch
+
+проверка статуса:
+$ git status
+
+отправка файлов на локальный репозиторий:
+$ git pull
+
+проверка статуса:
+$ git status
+
+		TXT
+
+1. Создание внешнего репозитория TXT
+ зайти на Github, нажать +, выбрать new repository, 
+написать название репозитория TXT
+
+2. Клонировать репозиторий TXT на локальный компьютер
+
+$ git clone https://github.com/ishklianik/TXT.git
+
+3.Внутри локального  репозитория TXT создать файл new.xml:
+
+заходим на репозиторий на внутреннем диске:
+  $ cd XML
+
+создаем файл new.xml:
+$ touch new.txt
+  
+проверяем создание, смотрим список папок/файлов:
+$ ls -la
+
+4. Добавить файл под git
+$ git add new.txt
+
+5. Закоммитить файл
+$ git commit -m "New file"
+
+6. Отправить файл на внешний GitHub репозиторий
+ $ git push 
+
+7. Отредактировать содержимое файла new.txt -написать информацию о себе
+ (ФИО,возраст, количество домашних животных, желаемая будущая зарплата)
+
+$ cat >> new.xml
+[{"name":"Iryna Shklianik"}
+{"age":43}
+{"number of pets":1}
+{"expected salary":"6000 USD"}]
+
+8.Отправить изменения на внешний репозиторий
+проверка:
+$ git status
+
+добавление:
+$ git add new.txt 
+коммит:
+$ git commit -m "update"
+пуш:
+$ git push
+
+9. Создать  файл preferences.xml
+ 
+$ touch preferences.txt 
+
+10.  В файл preferences.xml добавить информацию о своих предпочтениях(Любимый фильм, 
+любимый сериал. любимая еда. время года. страна которую хотели бы посетить
+
+$ cat >> preferences.txt 
+[{"favorite film":"Love actually"}
+ {"favorite series":"Bron"}
+{"favotite food":"asian cuisine"}
+{"favorite season":"summer"}
+{"country to visit":"Singapore"}]
+
+11. Создать файл skills.txt , добавить информацию о скиллах которые будут изучены на курсе: 
+ создание файла:
+$ touch  skills.txt 
+
+внесение информации в пустой файл:
+
+$ cat >> skills.txt 
+[{"skill1":"git"}
+{"skill2":"Postman"}
+{"skill3":"Charles"}
+{"skill4":"JS"}
+{"skill5":"SOAP UI"}
+{"skill6":"Katalon"}]
+ 
+ 12. Сделать commit в одну строку
+
+проверка:
+$ git status
+
+добавление нескольких файлов (всех):
+ $ git add .
+
+коммит
+$ git commit -m "Add two files"
+
+13. Отправить сразу 2 файла на внешний репозиторий
+ $ git push
+
+проверка:
+ $ git status
+
+14. На веб интерфейсе создать файл bug_report.txt 
+Нажать  ADD file
+
+15.  Сделать Commit changes (сохранить)  изменения на веб интерфейсе
+Нажать Commit changes
+
+16. На веб интерфейсе модифицировать файл bug_report.txt , добавить баг-репорт в формате txt 
+Открыть файл нажав на него
+Внести информацию
+
+17. Сделать Commit changes (сохранить)  изменения на веб интерфейсе
+Нажать Commit changes  внизу файла
+
+18. Синхронизировать внешний и локальный репозиторий xml
+проверка статуса:
+$ git status
+  
+$ git fetch
+
+проверка статуса:
+ $ git status
+
+отправка файлов на локальный репозиторий
+$ git pull
+
+проверка статуса:
+  $ git status
