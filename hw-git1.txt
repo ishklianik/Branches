@@ -155,11 +155,10 @@ $ git push
 27. Отредактировать содержимое файла new.xml -написать информацию о себе
  (ФИО,возраст, количество домашних животных, желаемая будущая зарплата)
 
-$ cat >> new.xml
-[{"name":"Iryna Shklianik"}
-{"age":43}
-{"number of pets":1}
-{"expected salary":"6000 USD"}]
+<name>Iryna Shklianik</name>
+<age>43</age>
+<number of pets>1</number of pets>
+<expected salary>6000_USD</expected salary>
 
 28.	Отправить изменения на внешний репозиторий:
 
@@ -182,11 +181,11 @@ $ touch preferences.xml
 любимый сериал. любимая еда. время года. страна которую хотели бы посетить
 
 $ cat >> preferences.xml
-[{"favorite film":"Love actually"}
- {"favorite series":"Bron"}
-{"favotite food":"asian cuisine"}
-{"favorite season":"summer"}
-{"country to visit":"Singapore"}]
+<favourite film>Love actually</favourite film>
+<favourite series>Broen</favourite series>
+<favourite food>asian cuisine</favourite food>
+<favourite season>summer</favourite season>
+<country to visit>Singapore</country to visit>
 
 31. Создать файл skills.xml , добавить информацию о скиллах которые будут изучены на курск :
   создание файла:
@@ -194,12 +193,12 @@ $ touch  skills.xml
 
 внесение информации в пустой файл:
  $ cat >> skills.xml
-[{"skill1":"git"}
-{"skill2":"Postman"}
-{"skill3":"Charles"}
-{"skill4":"JS"}
-{"skill5":"SOAP UI"}
-{"skill6":"Katalon"}]
+<skill1>gitbash</skill1>
+<skill2>github</skill2>
+<skill3>postman</skill3>
+<skill4>JS</skill4>
+<skill5>charles</skill5>
+<skill6>katalon</skill6>
  
  32. Сделать commit в одну строку
  проверка статуса:
@@ -279,10 +278,10 @@ $ git commit -m "New file"
  (ФИО,возраст, количество домашних животных, желаемая будущая зарплата)
 
 $ cat >> new.xml
-[{"name":"Iryna Shklianik"}
-{"age":43}
-{"number of pets":1}
-{"expected salary":"6000 USD"}]
+name: Iryna Shklianik
+age: 43
+number of pets: 1
+expected salary: 6000_USD
 
 8.Отправить изменения на внешний репозиторий
 проверка:
@@ -303,11 +302,11 @@ $ touch preferences.txt
 любимый сериал. любимая еда. время года. страна которую хотели бы посетить
 
 $ cat >> preferences.txt 
-[{"favorite film":"Love actually"}
- {"favorite series":"Bron"}
-{"favotite food":"asian cuisine"}
-{"favorite season":"summer"}
-{"country to visit":"Singapore"}]
+favourite film: Love Actually
+favorite series: Broen
+favourite food: Asian cuisine
+favorite season: Summer
+country to visit: Singapore
 
 11. Создать файл skills.txt , добавить информацию о скиллах которые будут изучены на курсе: 
  создание файла:
@@ -316,13 +315,14 @@ $ touch  skills.txt
 внесение информации в пустой файл:
 
 $ cat >> skills.txt 
-[{"skill1":"git"}
-{"skill2":"Postman"}
-{"skill3":"Charles"}
-{"skill4":"JS"}
-{"skill5":"SOAP UI"}
-{"skill6":"Katalon"}]
- 
+skill1: gitbash
+skill2: github
+skill3: Postman
+skill4: Charles
+skill5: JS
+skill6: SOAP UI
+skill7: Katalon
+
  12. Сделать commit в одну строку
 
 проверка:
