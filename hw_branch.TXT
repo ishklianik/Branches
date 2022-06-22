@@ -1,0 +1,160 @@
+
+1.Íà ëîêàëüíîì ðåïîçèòîðèè ñäåëàòü âåòêè äëÿ 
+-CheckLists
+-Charles
+- Postman
+-Jmeter
+-Bug_Reports
+-Mobile_Testing
+-SQL
+
+$ git branch Postman
+
+$ git branch Jmeter
+
+$ git branch CheckLists
+
+$ git branch Bug_Reports
+
+$ git branch SQL
+
+$ git branch Charles
+
+$ git branch Mobile_Testing
+
+ïðîâåðÿåì, ñìîòðèì ñòðóêòóðó âåòîê:
+
+$ git branch
+  Bug_Reports
+  Charles
+  CheckLists
+  Jmeter
+  Mobile_Testing
+  Postman
+  SQL
+* main
+
+2. Çàïóøèòü âñå âåòêè íà âíåøíèé ðåïîçèòîðèé
+
+$ git push-u origin SQL
+
+$ git push -u origin SQL
+
+$ git push -u origin Postman
+
+$ Git push -u origin CheckLists
+
+$ Git push -u origin Jmeter
+
+$ Git push -u origin Mobile_Testing
+
+$ Git push -u origin Bug_Reports
+
+$ Git push -u origin Charles
+
+Ïðîâåðÿåì:
+
+$ git status
+
+3. Â âåòêó áàãðåïîðòû ñäåëàòü òåêñòîâûé äîêóìåíò  ñî ñòðóêòóðîé áàãðåïîðòà:
+
+çàõîäè íà âåòêó Bug_Reports:
+
+$ git checkout Bug_Reports
+
+ñîçäàíèå ôàéëà:
+
+$ touch bug_reports.txt
+
+âíåñåíèå èíôîðìàöèè â òåêñò:
+
+$ cat >> bug_reports.txt
+ID:
+summary:
+description:
+steps to reproduce:
+actual result:
+expected result:
+severity:
+priority:
+
+4. Çàïóøèòü ñòðóêòóðó áàãðåïîðòà íà âíåøíèé äåïîçèòîðèé:
+
+$ git add .
+
+$ git commit -m "new file"
+
+$ git push
+
+5. Âìåðæèòü âåòêó Bag_Reports â main:
+ïåðåõîäèì íà âåòêó main
+
+$ git checkout main
+
+çàìåðæèâàåì âåòêó
+
+$ git merge Bug_Reports -m "merge bug-reports"
+
+6. Çàïóøèòü main íà âíåøíèé äåïîçèòîðèé:
+çàõîäèì íà âåòêó main
+
+$ git checkout main
+
+çàïóøèâàåì ôàéëû
+
+$ git add .
+
+ $ git commit -m "update"
+
+$ git push
+
+7. Â âåòêå CheckLists íàáðîñàòü ñòðóêòóðó ÷åê-ëèñòà (ñîçäàåì òåêñò è âíîñèì èíôîðìàöèþ):
+çàõîäèì íà âåòêó CheckLists
+
+$ git checkout CheckLists
+
+ñîçäàåì äîêóìåíò:
+$ touch checkList.txt
+
+âíîñèì èíîðìàöèþ â äîêóìåíò
+
+$ cat >> checkList.txt
+ID:
+Modul:
+Submodul:
+Title:
+Priority:
+Id requirements:
+
+8. Çàïóøèòü ñòðóêòóðó íà âíåøíèé ðåïîçèòîðèé
+
+$ git add .
+
+$ git commit -m "new file"
+
+$ git push
+
+9. Íà âíåøíåì ðåïîçèòîðèè ñäåëàòü Pull Request  âåòêè CheckList â  main
+Çàéòè â Github íà âåòêó CheckList 
+Íàæàòü íà Compare and Pull request
+âûáðàòü base: main -compare: CheckLists
+óêàçàòü ñîîáùåíèå: first merge
+íàæàòü Merge Pull request
+íàæàòü Merge
+ïîÿâèòñÿ ñîîáùåíèå: Pull request successfully merged and closed
+Ïîâåðèòü: ïîñìîòðåòü âåòêó main è âåòêó CheckLists
+
+10. Ñèíõðîíèçàöèÿ Âíåøíåé è Ëîêàëüíîé âåòêè main
+$ git checkout main
+
+$ git status
+
+$ git fetch
+
+$ git pull
+
+$ git status
+
+
+
+
